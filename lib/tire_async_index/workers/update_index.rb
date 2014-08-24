@@ -41,7 +41,7 @@ module TireAsyncIndex
       end
 
       def get_finder_method(klass)
-        klass.respond_to?(:tire_async_finder) ? :tire_async_finder : :find
+        klass.respond_to?(:tire_async_finder) ? :tire_async_finder : :find_by_id
       end
     end
   end
